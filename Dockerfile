@@ -1,6 +1,6 @@
 FROM centos:7
 
-ENV LC_ALL=en_US.utf-8 # Докер ругался на локализацию, пришлось сменить
+ENV LC_ALL=en_US.utf-8
 ENV LANG=en_US.utf-8
 
 
