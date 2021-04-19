@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment { 
         registry = "ffswhy1" 
-        registryCredential = 'agent-ssh' 
+        registryCredential = 'agent-ssh-2' 
         dockerImage = 'flask_app' 
     }
     stages {
