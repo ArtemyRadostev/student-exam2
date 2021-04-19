@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent {label 'agent'}
     environment { 
         registry = "ffswhy1" 
         registryCredential = 'agent-ssh-2' 
