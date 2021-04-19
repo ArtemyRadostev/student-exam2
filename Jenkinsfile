@@ -6,11 +6,17 @@ pipeline {
         dockerImage = 'flask_app' 
     }
     stages {
-        stage('Tests'){
-            pip install -e '.[test]'
-            coverage run -m pytest
-            coverage report
-        }
+        stage ('Tests')  {
+            steps ('Steps'){
+                sh"""
+                    pip install -e '.[test]'
+                    coverage run -m pytest
+                    coverage report
+                 """
+           }
+    }
+            
+            
         stage('Building our image') { 
             steps { 
                 script { 
