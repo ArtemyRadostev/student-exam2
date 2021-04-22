@@ -26,6 +26,7 @@ pipeline {
             steps { 
                 script { 
                     dockerImage = docker.build registry + '/' + dockerImage + ":$BUILD_NUMBER" 
+                    sh 'echo Build Number = $BUILD_NUMBER'
                 }
             } 
         }
