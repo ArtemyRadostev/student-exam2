@@ -37,8 +37,7 @@ pipeline {
                         dockerImage.push() 
                     }
                 }
-             build (job: "${Test_Pipeline_CD}", parameters: {
-             {
+            build (job: "${Test_Pipeline_CD}", parameters: {
               $class: 'StringParameterValue',
               name: 'BUILD_NUMBER',
               value: "${env.BUILD_NUMBER}"
