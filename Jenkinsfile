@@ -37,7 +37,7 @@ pipeline {
                         dockerImage.push() 
                     }
                 }
-             build (job: "${http:%2F%2F192.168.56.112:8080/job/Test%20Pipeline%20CD/}", parameters: {
+             build (job: "${Test_Pipeline_CD}", parameters: {
              {
               $class: 'StringParameterValue',
               name: 'BUILD_NUMBER',
