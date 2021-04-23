@@ -38,7 +38,7 @@ pipeline {
                     }
                 }
             build (job: "${Test_Pipeline_CD}", parameters: {
-              $class: 'StringParameterValue',
+              $class: "StringParameterValue",
               name: 'BUILD_NUMBER',
               value: "${env.BUILD_NUMBER}"
              }
